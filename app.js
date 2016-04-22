@@ -30,6 +30,7 @@ ReactDOM.render(
         <Route path="/" component={App}>
           <Route path="first" component={First}/>
           <Route path="second" component={Second}/>
+          <Route path="*" component={null}/>
         </Route>
       </Router>
     </div>

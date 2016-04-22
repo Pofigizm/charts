@@ -28,8 +28,9 @@
   "scripts": {
     "precommit": "npm run lint",
     "lint": "eslint **/*.js, *.js",
-    "build": "NODE_ENV=production webpack && cp index.html dist/",
-    "start": "webpack-dev-server --history-api-fallback --no-info --open"
+    "build": "NODE_ENV=production webpack && cp index.html dist/ && cp server.js dist/",
+    "dev": "webpack-dev-server --history-api-fallback --no-info --open",
+    "start": "cd dist && node server.js"
   },
   "babel": {
     "presets": [
